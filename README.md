@@ -425,5 +425,7 @@ MOVIEHASHTAGMAPREDUCE/
 │   ├── HashtagDriver.class
 │   ├── HashtagDriver.class
 │   └── HashtagDriver.class
-└── hashtag-count.jar
+├── hashtag-count.jar
+├── images/
+└── README.md
 ```
