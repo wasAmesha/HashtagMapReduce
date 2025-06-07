@@ -9,7 +9,7 @@ public class HashtagMapper extends Mapper<Object, Text, Text, IntWritable> {
     private Text hashtag = new Text();
 
     public void map(Object key, Text value, Context context) throws IOException, InterruptedException {
-        String line = value.toString().toLowerCase(); // assuming Text_Lower field
+        String line = value.toString().toLowerCase();
         StringTokenizer tokenizer = new StringTokenizer(line, " ,.!?:;\"'()[]{}<>|");
 
         while (tokenizer.hasMoreTokens()) {

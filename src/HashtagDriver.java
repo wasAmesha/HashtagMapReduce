@@ -16,8 +16,8 @@ public class HashtagDriver {
         job.setReducerClass(HashtagReducer.class);
         job.setOutputKeyClass(Text.class);
         job.setOutputValueClass(IntWritable.class);
-        FileInputFormat.addInputPath(job, new Path(args[0])); // input/
-        FileOutputFormat.setOutputPath(job, new Path(args[1])); // output/
+        FileInputFormat.addInputPath(job, new Path(args[0])); 
+        FileOutputFormat.setOutputPath(job, new Path(args[1])); 
         System.exit(job.waitForCompletion(true) ? 0 : 1);
     }
 }
